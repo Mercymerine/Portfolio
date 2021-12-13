@@ -1,0 +1,185 @@
+/* Home & Nav */
+
+body {
+    background: linear-gradient(black, white, black);
+    margin-top: 60px;
+}
+
+.navstyle {
+    background: linear-gradient(to right, white, black, white);
+    height: 60px;
+}
+
+.navoptions {
+    color: #fff;
+    font-size: 2em;
+    padding: 5px;
+}
+
+.companyname {
+    color: #fff;
+    font: sanserif;
+    font-size: 3em;
+}
+
+.skil {
+    color: #fff;
+    font-size: 30px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 9em;
+}
+
+.navoptions:hover {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 2px #000;
+    font-weight: bold;
+}
+
+/* Portfolio */
+
+.project {
+    padding: 0;
+    position: relative;
+    border: solid 2px white;
+}
+
+.projectname {
+    color: #fff;
+    background-color: #000;
+    padding: 0px 30px 0px 30px;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.portfoliotext {
+    color: #fff;
+    font-size: 3em;
+}
+
+.portfoliotext,
+.skills,
+.logo,
+.companyname {
+    text-shadow: 5px 3px #000;
+    font-weight: bold;
+}
+
+.image {
+    height: 296px;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-45%, -48%);
+    -ms-transform: translate(-45%, -48%);
+}
+
+.links {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 40px 5px 40px;
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    transform: translate(-60%, -52%);
+    -ms-transform: translate(-60%, -52%);
+}
+
+.links:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.context {
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    height: 100px;
+    color: #fff;
+}
+
+.social {
+    color: #fff;
+}
+
+/* Media Querys */
+
+@media (max-width: 575px) {
+
+    .navoptions,
+    .projectname {
+        font-size: 1.1em;
+    }
+
+    .links,
+    .text {
+        font-size: 15px;
+    }
+
+    .links,
+    .projectname {
+        padding: 0 10px 0 10px;
+    }
+
+    .navstyle {
+        padding-top: 15px;
+    }
+
+    .companyname,
+    .portfoliotext {
+        font-size: 1.3em;
+    }
+
+    .logo {
+        font-size: 3em;
+    }
+
+    .skil {
+        display: none;
+    }
+
+    .image {
+        height: 270px;
+    }
+
+}
